@@ -1,7 +1,7 @@
-FROM java:17
+FROM openjdk:17
 
 EXPOSE 8080
 
-ADD target/JenkinsDemo1 JenkinsDemo1.jar
+ADD target/jenkins-demo1.jar jenkins-demo1.jar
 
-ENTRYPOINT ["java","jar","JenkinsDemo1"]
+ENTRYPOINT ["java","-jar","/jenkins-demo1.jar"]
